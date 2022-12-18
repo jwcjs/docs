@@ -1,0 +1,8 @@
+:root {
+  --vp-c-bg-alt: var(--vp-c-bg) !important;
+}
+
+/* 缓慢变暗 */
+body {
+  transition: color .5s,background-color .5s;
+}

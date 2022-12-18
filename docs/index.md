@@ -11,10 +11,10 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: /guide/what-is-vitepress
+      link: /guide/what-is-jwc
     - theme: alt
       text: View on GitHub
-      link: https://github.com/vuejs/vitepress
+      link: https://github.com/jwcjs/core
 
 features:
   - title: Web Components
@@ -30,6 +30,6 @@ features:
 <style>
   :root {
     --vp-home-hero-image-background-image: linear-gradient( -45deg, #000 50%, #000 50% );
-    --vp-home-hero-image-filter: blur(50px);
+    --vp-home-hero-image-filter: blur(60px);
   }
 </style>

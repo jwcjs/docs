@@ -8,7 +8,7 @@ export default defineConfig({
   lastUpdated: true,
   themeConfig: {
     logo: "/logo.svg",
-    
+
     editLink: {
       pattern: "https://github.com/jwcjs/docs/edit/main/docs/:path",
       text: "在 GitHub 上编辑此页",
@@ -17,6 +17,38 @@ export default defineConfig({
     nav: [
       { text: 'Guide', link: '/guide/' },
     ],
+
+    sidebar: {
+      '/': [
+        {
+          text: 'Getting Started', items: [{
+            text: 'Introduction',
+            link: '/guide/what-is-jwc',
+          }, {
+            text: 'Quick Start',
+            link: '/guide/quick-start',
+          }]
+        },
+        {
+          text: 'Components', items: [{
+            text: 'Defining',
+            link: '/guide/defining',
+          }, {
+            text: 'Rendering',
+            link: '/guide/rendering',
+          }, {
+            text: 'Reactivity',
+            link: '/guide/reactivity',
+          }, {
+            text: 'Styles',
+            link: '/guide/styles',
+          }, {
+            text: 'Lifecycle',
+            link: '/guide/lifecycle',
+          },],
+        },
+      ]
+    },
 
     footer: {
       message: 'Made with ❤️ by Wibus and AkaraChen',
