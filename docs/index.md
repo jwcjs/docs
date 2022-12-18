@@ -30,6 +30,6 @@ features:
 <style>
   :root {
     --vp-home-hero-image-background-image: linear-gradient( -45deg, #000 50%, #000 50% );
-    --vp-home-hero-image-filter: blur(60px);
+    --vp-home-hero-image-filter: blur(50px);
   }
 </style>
