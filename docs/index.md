@@ -26,10 +26,3 @@ features:
   - title: TypeScript
     details: Write your components in TypeScript. Get all the benefits of a typed language.
 ---
-
-<style>
-  :root {
-    --vp-home-hero-image-background-image: linear-gradient( -45deg, #000 50%, #000 50% );
-    --vp-home-hero-image-filter: blur(50px);
-  }
-</style>
