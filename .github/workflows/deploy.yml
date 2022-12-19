@@ -39,7 +39,7 @@ jobs:
           pnpm run build
           mkdir -p dist
           cp -r docs/.vitepress/dist/* dist/
-          echo 'mog.js.org' > dist/CNAME
+          echo 'jwc.js.org' > dist/CNAME
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
