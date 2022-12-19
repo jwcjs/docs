@@ -15,7 +15,7 @@ export default defineConfig({
     },
 
     nav: [
-      { text: 'Guide', link: '/guide/' },
+      { text: 'Guide', link: '/guide/quick-start', activeMatch: '^/guide/' },
     ],
 
     sidebar: {
@@ -32,19 +32,19 @@ export default defineConfig({
         {
           text: 'Components', items: [{
             text: 'Defining',
-            link: '/guide/defining',
+            link: '/components/defining',
           }, {
             text: 'Rendering',
-            link: '/guide/rendering',
+            link: '/components/rendering',
           }, {
-            text: 'Reactivity',
-            link: '/guide/reactivity',
+            text: 'Reactive properties',
+            link: '/components/reactive-properties',
           }, {
             text: 'Styles',
-            link: '/guide/styles',
+            link: '/components/styles',
           }, {
             text: 'Lifecycle',
-            link: '/guide/lifecycle',
+            link: '/components/lifecycle',
           },],
         },
       ]

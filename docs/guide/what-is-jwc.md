@@ -12,12 +12,38 @@ The goal of JWC is to provide a simple, lightweight, and performant way to write
 
 Jwc supports the following features:
 
-- Function-based API
+- Function-based API <Badge text="Not yet implemented" type="danger"/>
 - JSX
 - TypeScript
 - Web Components
 
 If you are looking for a way to build web components, Jwc is a great choice. You just need some basic knowledge of JavaScript and JSX. You don't need to learn a new templating language.
+
+You have two choices for writing web components: **Class-based** or **function-based**: 
+
+::: code-group
+```js [Class Based]
+import { JwcComponent, Component, h, Props } from "@jwcjs/core";
+import style from './App.css?inline'
+
+@Component({ name: "app-element" })
+export class App extends JwcComponent {
+  override render() {
+    return (
+      <div>
+        <h1>Hello World</h1>
+        <span>{this.hello}</span>
+      </div>
+    )
+  }
+}
+// <app-element hello="Hello !!!"></app-element>
+```
+
+```js [Function Based <Badge text="Not yet implemented" type="danger"/>]
+// no yet implemented
+```
+:::
 
 ## Why Web Components?
 
