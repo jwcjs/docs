@@ -1,5 +1,16 @@
 # Quick Start
 
+## Overview
+
+Jwc.js is a JavaScript framework for using JSX to write web components on the web. It includes:
+
+- `Runtime`: A package for creating and rendering web components, it uses [Virtual DOM](https://en.wikipedia.org/wiki/Virtual_DOM) and Diff to update the DOM efficiently.
+- `Reactivity`: A package for creating reactive data bindings, it uses [Proxy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy) to track changes.
+- `Core`: A package for creating and defining custom elements, it uses [Custom Elements](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements) to define custom elements.
+
+The goal of Jwc is to provide a simple, lightweight, and performant way to write web components.
+
+You can find more information about Jwc in the [What is Jwc?](/guide/what-is-jwc) section.
 ## Scaffolding Your First jwc.js Project
 
 ::: warning
