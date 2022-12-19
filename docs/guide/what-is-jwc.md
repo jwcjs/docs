@@ -27,13 +27,13 @@ You have two choices for writing web components: **Class-based** or **function-b
 
 ::: code-group
 
-```js [Class Based]
+```tsx [Class Based]
 @Component({ name: "app-element", css: styles })
 export class App extends JwcComponent {
-	constructor() { super(); }
+  constructor() { super(); }
 
-	@Prop({ default: 0, attr: "count" }) count = 0;
-	public onClick = () => { this.count++; }}
+  @Prop({ default: 0, attr: "count" }) count = 0;
+  public onClick = () => { this.count++ }}
 
   override render() {
 		return (
@@ -48,13 +48,28 @@ export class App extends JwcComponent {
 
 ```
 
-```js [Function Based <Badge text="Not yet implemented" type="danger"/>]
-// no yet implemented
+```tsx [Function Based <Badge text="Not yet implemented" type="danger"/>]
+// no yet implemented // [!code focus]
+
+export function App() {
+  const [count, setCount] = useProp<number>(0);
+  const onClick = () => {
+    setCount(count + 1);
+  };
+
+  return (
+    <div class={"card"}>
+      <button onClick={onClick}>count is {String(count)}</button>
+    </div>
+  );
+}
+
+registerComponent("app-element", App, styles);
 ```
 
 :::
 
-With the example code and css style, you can create your own web component, like this: *(If you can't see this component, refresh it and try again)*
+With the example code and css style, you can create your own web component, like this: _(If you can't see this component, refresh it and try again)_
 
 <app-element count="2022"></app-element>
 
