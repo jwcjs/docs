@@ -64,6 +64,10 @@ export class App extends JwcComponent {
 /* ... */
 ```
 
+::: warning
+Although you can define a component without using the `@JwcComponent` decorator, it is not recommended. We won't use that in our documentation.
+:::
+
 
 ## Function Based <Badge text="Not yet implemented" type="danger"/>
 

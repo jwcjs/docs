@@ -29,7 +29,7 @@ export default defineConfig({
       '/': [
         {
           text: 'Getting Started', items: [{
-            text: 'Introduction',
+            text: 'What is Jwc?',
             link: '/guide/what-is-jwc',
           }, {
             text: 'Quick Start',
