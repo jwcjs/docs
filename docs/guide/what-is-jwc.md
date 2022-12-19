@@ -1,5 +1,8 @@
-<script>
-import './demo.js';
+<script setup>
+import { onMounted } from "vue";
+onMounted(() => {
+  import("./demo.js")
+});
 </script>
 
 # What is Jwc?
@@ -71,7 +74,7 @@ registerComponent("app-element", App, styles);
 
 With the example code and css style, you can create your own web component, like this: _(If you can't see this component, refresh it and try again)_
 
-<app-element count="2022"></app-element>
+<app-element count="0"></app-element>
 
 ## Why Web Components?
 
