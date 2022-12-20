@@ -15,11 +15,11 @@ export class App extends JwcComponent {
   }
 }
 
-declare global {
-    interface HTMLElementTagNameMap {
-        "app-element": App;
-    }
-}
+declare global { // [!code focus]
+    interface HTMLElementTagNameMap { // [!code focus]
+        "app-element": App; // [!code focus]
+    } // [!code focus]
+} // [!code focus]
 ```
 
 Then, you can get full type intelligence on this component:
