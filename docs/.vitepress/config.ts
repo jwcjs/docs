@@ -91,6 +91,12 @@ export default defineConfig({
       message: 'Made with ❤️ by Wibus and AkaraChen',
       copyright: 'Copyright © 2022-PRESENT Jwc.js',
     },
+
+    algolia: {
+      indexName: 'jwcjs_docs',
+      appId: "DXY8DN63UX",
+      apiKey: "cc4bb51bcbc8bdd9f1e7e02876e64260",
+    }
   },
 
   vue: {
