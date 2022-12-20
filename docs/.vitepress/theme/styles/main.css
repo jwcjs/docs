@@ -11,10 +11,11 @@ body {
   --vp-home-hero-image-filter: blur(50px) !important;
   --vp-home-hero-name-color: transparent !important;
   --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe, #41d1ff) !important;
-  --vp-c-brand: #bd34fe !important;
+  --vp-c-brand: #bf40f9 !important;
   --vp-code-tab-active-bar-color: var(--vp-c-green) !important;
   --vp-button-brand-border: #bd34fe !important;
   --vp-button-brand-bg: #bd34fe !important;
   --vp-button-brand-hover-bg: #ae00ff !important;
   --vp-button-brand-hover-border: #b108ff !important;
+  --vp-c-brand-dark: #ae00ff !important;
 }

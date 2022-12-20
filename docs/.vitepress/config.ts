@@ -5,6 +5,22 @@ export default defineConfig({
   title: "Jwc.js",
   description: "A JavaScript framework for using JSX to write web components on the web.",
   lastUpdated: true,
+
+  head: [
+    ['link', { rel: 'icon', href: '/logo.svg', type: 'image/svg+xml' }],
+    ['meta', { name: 'author', content: `wibus-wee, AkaraChen contributors` }],
+    ['meta', { name: 'keywords', content: 'typescript, node, jwcjs, web-component, web-component-framework' }],
+    ['meta', { property: 'og:title', content: "Jwc.js" }],
+    ['meta', { property: 'og:description', content: "A JavaScript framework for using JSX to write web components on the web." }],
+    ['meta', { property: 'og:url', content: "https://jwc.js.org" }],
+    ['meta', { property: 'og:image', content: "/social-media.png" }],
+    ['meta', { name: 'twitter:title', content: "Jwc.js" }],
+    ['meta', { name: 'twitter:description', content: "A JavaScript framework for using JSX to write web components on the web." }],
+    ['meta', { name: 'twitter:image', content: "/social-media.png" }],
+    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+    ['link', { rel: 'mask-icon', href: '/logo.svg', color: '#ffffff' }],
+  ],
+
   themeConfig: {
     logo: "/logo.svg",
 
