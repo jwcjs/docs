@@ -54,6 +54,15 @@ export default defineConfig({
             link: '/components/lifecycle',
           },],
         },
+        {
+          text: 'Describing the UI', items: [{
+            text: 'JSX',
+            link: '/jsx/overview',
+          }, {
+            text: 'Writing JSX',
+            link: '/jsx/writing-jsx',
+          }]
+        }
       ]
     },
 
