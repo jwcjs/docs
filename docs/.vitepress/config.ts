@@ -10,7 +10,7 @@ export default defineConfig({
 
     editLink: {
       pattern: "https://github.com/jwcjs/docs/edit/main/docs/:path",
-      text: "在 GitHub 上编辑此页",
+      text: "Edit this page on GitHub",
     },
 
     nav: [
