@@ -62,6 +62,19 @@ We provide a few templates to help you get started with jwc.js. You can use them
 | --- | --- |
 | [`starter-vite-ts`](https://github.com/jwcjs/core/tree/main/packages/create-jwc/starter-vite-ts) | A starter template for Vite + TypeScript + Jwc.js |
 
+You should see something similar to the following:
+
+```
+✔ Project name: … my-jwc-app
+✔ Select a template: › Starter (Vite + TypeScript)
+✔ Select a package manager: › pnpm
+✔ Created project in /<path>/my-jwc-app.
+✔ To get started:
+  cd my-jwc-app
+  pnpm install
+  pnpm run dev
+```
+
 Once the project is created, follow the instructions to install dependencies and start the dev server:
 
 ::: code-group
