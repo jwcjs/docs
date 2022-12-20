@@ -78,7 +78,12 @@ export default defineConfig({
             text: 'Writing JSX',
             link: '/jsx/writing-jsx',
           }]
-        }
+        },
+        {
+          text: 'Publish component library', items: [{
+            text: 'TypeScript',
+            link: '/publish/typescript'
+        }]}
       ]
     },
 
