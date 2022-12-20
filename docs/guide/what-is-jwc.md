@@ -72,9 +72,9 @@ registerComponent("app-element", App, styles);
 
 :::
 
-With the example code and css style, you can create your own web component, like this: _(If you can't see this component, refresh it and try again)_
+With the example code and css style, you can create your own web component, like this:
 
-<app-element count="0"></app-element>
+<jwc-element count="0"></jwc-element>
 
 ## Why Web Components?
 

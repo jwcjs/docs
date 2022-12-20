@@ -77,5 +77,12 @@ export default defineConfig({
     },
   },
 
-  
+  vue: {
+    template: {
+      compilerOptions: {
+        // @ts-ignore
+        isCustomElement: (tag) => tag.startsWith('jwc-'),
+      }
+    }
+  }
 })
