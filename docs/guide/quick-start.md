@@ -145,4 +145,16 @@ pnpm add jwcjs
 ```
 :::
 
+Then, configure your tsconfig.json file to use the JSX factory and fragment factory:
+
+```json
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "jsxFactory": "h",
+    "jsxFragmentFactory": "Fragment"
+  }
+}
+```
+
 These commands will install jwcjs. You can use Vite, Rollup, Webpack, or any other build tool to build your project.
