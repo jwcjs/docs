@@ -7,7 +7,7 @@ When you define a web components, TypeScript doesn't know anything about it, all
 ## Define for TypeScript
 
 ```ts
-@JwcComponent({ name: "app-element" })
+@Component({ name: "app-element" })
 export class App extends JwcComponent {
   @Prop() name: string = "World";
   override render() {

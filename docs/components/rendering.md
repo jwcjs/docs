@@ -5,7 +5,7 @@ You have 2 choices for rendering a component:
 ::: code-group
 
 ```tsx [Class Based]
-@JwcComponent({ name: "app-element" })
+@Component({ name: "app-element" })
 export class App extends JwcComponent {
   /* ... */
   override render() {

@@ -5,7 +5,7 @@ Define a Jwc component by creating a class that extends `JwcComponent` or a func
 ::: code-group
 
 ```tsx [Class Based]
-@JwcComponent({ name: "app-element" })
+@Component({ name: "app-element" })
 export class App extends JwcComponent {
   /* ... */
 }
@@ -19,13 +19,13 @@ export class App extends JwcComponent {
 
 ## Class Based
 
-The `@JwcComponent` decorator is used to define a Jwc component. It takes an object with the following properties:
+The `@Component` decorator is used to define a Jwc component. It takes an object with the following properties:
 
 - `name` - The name of the component. This is used to identify the component in the DOM. It must be unique.
 - [`css`](./styles.md) - The CSS to be applied to the component. The CSS is applied to the shadow DOM of the component.
 - `options` - The options to be passed to the component. Follows the ElementDefinitionOptions interface from the [Custom Elements API](https://developer.mozilla.org/en-US/docs/Web/API/CustomElementRegistry/define#Parameters).
 
-I recommend you do not use JavaScript to define your component. Instead, use TypeScript. This will allow you to use the `@JwcComponent` decorator to define your component.
+I recommend you do not use JavaScript to define your component. Instead, use TypeScript. This will allow you to use the `@Component` decorator to define your component.
 
 But if you do use JavaScript or you want to define without using the decorator:
 
@@ -35,7 +35,7 @@ But if you do use JavaScript or you want to define without using the decorator:
     /* ... */
   }; // [!code ++]
 
-  @JwcComponent({ name: "app-element" /* ... */ }) // [!code --]
+  @Component({ name: "app-element" /* ... */ }) // [!code --]
 export class App extends JwcComponent {
   constructor() {
     super();
@@ -65,7 +65,7 @@ export class App extends JwcComponent {
 ```
 
 ::: warning
-Although you can define a component without using the `@JwcComponent` decorator, it is not recommended. We won't use that in our documentation.
+Although you can define a component without using the `@Component` decorator, it is not recommended. We won't use that in our documentation.
 :::
 
 

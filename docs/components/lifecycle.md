@@ -21,7 +21,7 @@ In class-based components, you can override these methods. In function-based com
 The constructor is called when the component is created. This is where you can initialize the component.
 
 ```ts
-@JwcComponent({ name: "app-element" })
+@Component({ name: "app-element" })
 export class App extends JwcComponent {
   constructor() {
     super();
@@ -37,7 +37,7 @@ Jwc will get the `options` property from the `@JwcComponent` decorator and pass 
 The connected callback is called when the component is added to the DOM.
 
 ```ts
-@JwcComponent({ name: "app-element" })
+@Component({ name: "app-element" })
 export class App extends JwcComponent {
   override connectedCallback() {
     super.connectedCallback();
@@ -57,7 +57,7 @@ At last, Jwc will render the component in the `connectedCallback` method and app
 The disconnected callback is called when the component is removed from the DOM.
 
 ```ts
-@JwcComponent({ name: "app-element" })
+@Component({ name: "app-element" })
 export class App extends JwcComponent {
   override disconnectedCallback() {
     super.disconnectedCallback();
@@ -75,7 +75,7 @@ Jwc will remove the rendered result from the shadowRoot in the `disconnectedCall
 The attribute changed callback is called when an attribute of the component is changed.
 
 ```ts
-@JwcComponent({ name: "app-element" })
+@Component({ name: "app-element" })
 export class App extends JwcComponent {
   override attributeChangedCallback(
     name: string,
@@ -97,7 +97,7 @@ Jwc will update dom in the `attributeChangedCallback` method.
 The adopted callback is called when the component is moved to a new document.
 
 ```ts
-@JwcComponent({ name: "app-element" })
+@Component({ name: "app-element" })
 export class App extends JwcComponent {
   override adoptedCallback() {
     super.adoptedCallback();

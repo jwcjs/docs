@@ -10,7 +10,7 @@ Jwc components have reactive properties. These properties are automatically upda
 ::: code-group
 
 ```tsx [Class Based]
-@JwcComponent({ name: "app-element" })
+@Component({ name: "app-element" })
 export class App extends JwcComponent {
   @Prop() name: string = "World";
   override render() {
